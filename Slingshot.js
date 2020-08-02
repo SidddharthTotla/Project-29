@@ -13,6 +13,11 @@ class Slingshot{
     fly(){
         this.slingshot.bodyA = null;
     }
+
+    attach(bodyA){
+        this.slingshot.bodyA = bodyA;
+    }
+
     display(){
         if(this.slingshot.bodyA){
         var pointA = this.slingshot.bodyA.position;

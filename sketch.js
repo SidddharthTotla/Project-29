@@ -80,3 +80,9 @@ function mouseDragged(){
 function mouseReleased(){
   slingshot.fly();
 }
+
+function keyPressed(){
+  if(keyCode===32){
+    slingshot.attach(polygon.body);
+  }
+}
