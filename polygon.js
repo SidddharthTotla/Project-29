@@ -7,7 +7,7 @@ class Polygon{
         }
         this.body = Bodies.circle(x,y,radius,options);
         this.radius = radius;
-        this.image = loadImage("polygon.png");
+        this.image = loadImage("Polygon.png");
         World.add(world,this.body);
     }
     display(){

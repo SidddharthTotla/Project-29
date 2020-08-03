@@ -8,6 +8,7 @@ class Box {
     this.body = Bodies.rectangle(x, y, width, height, options);
     this.width = width;
     this.height = height;
+    this.Visibility = 255;
     
     World.add(world, this.body);
   }
@@ -31,7 +32,7 @@ else{
   push();
   this.Visibility=this.Visibility-5;
   tint(255,this.Visibility);
-  rect(this.body.position.x,this.body.position.y,this.wirdth,this.height);
+  //rect(this.body.position.x,this.body.position.y,this.width,this.height);
   pop();
   }
 };
